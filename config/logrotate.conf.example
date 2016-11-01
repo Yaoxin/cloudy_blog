@@ -1,0 +1,11 @@
+# truncate your rails log every day
+# `cp logrotate.conf.example /etc/logrotate.d/cloudy_blog`
+/data/www/cloudy_blog/current/log/*.log {
+  daily
+  missingok
+  rotate 7
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+}
