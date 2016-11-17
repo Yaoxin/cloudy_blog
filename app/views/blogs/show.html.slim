@@ -1,0 +1,14 @@
+/- content_for(:title) do
+/  | #{@article.title}
+
+div style="margin: 2% 5% 2% 5%"
+  table
+    tr
+      td style="width: 60%"
+        div.markdown style="padding: 2% 8% 5% 8%; border: 1px solid LightGrey;"
+          h2 #{@article.title}
+          == @article.content_html
+
+
+
+

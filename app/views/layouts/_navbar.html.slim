@@ -1,0 +1,28 @@
+nav.navbar.navbar-default role="navigation"
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        span.sr-only
+          | Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to "醉里挑灯看剑", "#", class: "navbar-brand"
+
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      ul.nav.navbar-nav.navbar-right
+        li
+          = link_to "Blog", "#"
+        li
+          = link_to "Github", "https://github.com/Yaoxin"
+        li
+          = link_to "知乎", "https://www.zhihu.com/people/liu-fu-yun"
+        li
+          = link_to "关于我", about_path
+
+
+
+
+
+
+

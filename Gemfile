@@ -41,11 +41,14 @@ gem 'mina-multistage', '~> 1.0', require: false
 gem 'mina-sidekiq', '~> 0.3.1', require: false
 gem 'mina-logs', '>= 0.1.0', require: false
 gem 'lograge'
+gem 'redcarpet'
+gem 'rouge'
 group :development do
   gem 'rails_apps_testing'
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
 end
