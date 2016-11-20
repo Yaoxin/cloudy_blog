@@ -2,8 +2,9 @@
 @import "bootstrap";
 @import "markdown";
 @import "blog";
+@import "admin/*";
 
-body {
+body.view {
   font-family: STFangSong, Helvetica, Arial, Vernada, Tahoma, STXihei, "Microsoft YaHei", "Songti SC", SimSun, Heiti, sans-serif;
   font-size: 18px;
 }

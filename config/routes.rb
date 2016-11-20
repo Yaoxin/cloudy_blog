@@ -13,9 +13,13 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    resources :articles do
-      post :preview
+    resources :articles, except: [:show] do
+      collection do
+        post :preview
+      end
     end
+    resources :sessions, :only=>[:new, :create, :destroy]
+
     root "dashboard#index"
   end
 
