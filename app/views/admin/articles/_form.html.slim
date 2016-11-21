@@ -4,10 +4,10 @@
     .col-md-6
       = f.input :title, label: '标题', input_html: {name: 'title'}
   ul.nav.nav-tabs
-    li.active
-      a href="#content" 正文
-    li
-      a href="#preview" 预览
+    li.content-title.active
+      a href="#" 正文
+    li.preview-title
+      a href="#" 预览
     = link_to '上传图片', "#", :id=>'upload_photo'
   .tab-content#tabs
     .tab-pane.active#content
@@ -16,7 +16,3 @@
   .row
     .col-sm-12.col-lg-6
       button.btn.btn-primary.btn-lg type="submit" 提交
-
-
-
-

@@ -48,6 +48,7 @@ class Admin::ArticlesController < ApplicationController
   end
 
   def preview
+    # binding.pry
     render plain: Article.render_html(params[:content]|| "")
   end
 
