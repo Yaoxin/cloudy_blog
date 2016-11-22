@@ -6,11 +6,10 @@ Rails.application.routes.draw do
   get 'blogs/show'
 
   get 'home/index'
-
-  get 'blogs/index'
-
+  
   resources :blogs, :only=>[:index, :show, :edit] do
   end
+  resources :photos, :only=>[:create]
 
   namespace :admin do
     resources :articles, except: [:show] do
