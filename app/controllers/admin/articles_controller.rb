@@ -1,6 +1,6 @@
 class Admin::ArticlesController < ApplicationController
   layout 'layouts/admin'
-  # before_action :authericate_user!
+  before_action :authericate_user!
 
   def new
     @article = Article.new

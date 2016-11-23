@@ -20,4 +20,4 @@ nav.navbar.navbar-inverse role="navigation"
           = link_to "返回首页", root_path
         - if admin_username
           li
-            = link_to admin_username + ' [ 退出 ] ', admin_session(1), method: 'DELETE'
+            = link_to admin_username + ' [ 退出 ] ', admin_session_path(1), method: :delete
