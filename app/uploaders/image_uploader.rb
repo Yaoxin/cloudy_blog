@@ -1,5 +1,5 @@
 class ImageUploader < CarrierWave::Uploader::Base
-  include CarrierWace::MiniMagick
+  include CarrierWave::MiniMagick
 
   storage :file
 

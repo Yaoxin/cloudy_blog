@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/amatsuda/kaminari.git
-  revision: 721654ca755f4ede5d8734ae4ddf3239057b77d7
+  revision: 315e06bcc420b06e84031521448bc9cd87b24fac
   specs:
     kaminari (1.0.0.alpha)
       activesupport (>= 4.1.0)
@@ -172,6 +172,7 @@ GEM
       puma (>= 2.13)
     mina-sidekiq (0.3.1)
       mina
+    mini_magick (4.5.1)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     multi_json (1.12.1)
@@ -187,7 +188,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.4)
-    puma (3.6.1)
+    puma (3.6.2)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -335,6 +336,7 @@ DEPENDENCIES
   mina-multistage (~> 1.0)
   mina-puma
   mina-sidekiq (~> 0.3.1)
+  mini_magick
   pg
   pry
   puma (~> 3.0)

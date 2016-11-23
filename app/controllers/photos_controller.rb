@@ -2,11 +2,11 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(image: params["Filedata"])
     @photo.save!
-    render :text=> md_url(@photo.image.url)
+    render plain: md_url(@photo.image.medium.url)
   end
 
   private
     def md_url(url)
-      "![]#{url}"
+      "![](#{url})"
     end
 end

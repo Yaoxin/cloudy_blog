@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'blogs/show'
 
   get 'home/index'
-  
+
   resources :blogs, :only=>[:index, :show, :edit] do
   end
   resources :photos, :only=>[:create]
