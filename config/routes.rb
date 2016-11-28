@@ -3,12 +3,14 @@ Sidekiq::Web.set :session_secret, Rails.application.secrets[:secret_key_base]
 
 Rails.application.routes.draw do
 
-  get 'blogs/show'
-
   get 'home/index'
 
   resources :blogs, :only=>[:index, :show, :edit] do
+    resources :comments, only: [:index, :create]
   end
+
+
+
   resources :photos, :only=>[:create]
 
   namespace :admin do
