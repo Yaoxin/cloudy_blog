@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/amatsuda/kaminari.git
-  revision: 315e06bcc420b06e84031521448bc9cd87b24fac
+  revision: 997d9a6349bc932d90a5aa37f3217af3228f15ca
   specs:
     kaminari (1.0.0.alpha)
       activesupport (>= 4.1.0)
@@ -111,7 +111,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.10.0)
+    coffee-script-source (1.11.1)
     concurrent-ruby (1.0.2)
     connection_pool (2.2.1)
     database_cleaner (1.5.3)
@@ -134,7 +134,7 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
-    jbuilder (2.6.0)
+    jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.2.1)
@@ -160,15 +160,15 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mimemagic (0.3.2)
-    mina (1.0.3)
+    mina (0.3.8)
       open4 (~> 1.3.4)
       rake
     mina-logs (0.1.0)
       mina
-    mina-multistage (1.0.3)
-      mina (~> 1.0)
-    mina-puma (0.3.1)
-      mina
+    mina-multistage (1.0.2)
+      mina (>= 0.2.1)
+    mina-puma (0.3.2)
+      mina (< 1.0.0)
       puma (>= 2.13)
     mina-sidekiq (0.3.1)
       mina
@@ -253,7 +253,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (3.0.1)
+    selenium-webdriver (3.0.3)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
@@ -288,7 +288,7 @@ GEM
     status-page (0.1.4)
       rails (>= 4.2)
     temple (0.7.7)
-    thor (0.19.1)
+    thor (0.19.4)
     thread_safe (0.3.5)
     tilt (2.0.5)
     turbolinks (5.0.1)
@@ -332,9 +332,10 @@ DEPENDENCIES
   launchy
   listen (~> 3.0.5)
   lograge
+  mina (~> 0.3.8)
   mina-logs (>= 0.1.0)
   mina-multistage (~> 1.0)
-  mina-puma
+  mina-puma (= 0.3.2)
   mina-sidekiq (~> 0.3.1)
   mini_magick
   pg
