@@ -3,6 +3,8 @@ Sidekiq::Web.set :session_secret, Rails.application.secrets[:secret_key_base]
 
 Rails.application.routes.draw do
 
+  get 'tweet/index'
+
   get 'home/index'
 
   resources :blogs, :only=>[:index, :show, :edit] do
@@ -21,12 +23,16 @@ Rails.application.routes.draw do
     end
     resources :sessions, :only=>[:new, :create, :destroy]
 
+    resources :weibos
+
     root "dashboard#index"
   end
 
   root 'blogs#index'
 
   get '/about' => 'home#index'
+
+  get '/tweet' => 'tweet#index'
 
 
   # writer your routes here

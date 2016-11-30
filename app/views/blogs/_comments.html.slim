@@ -1,13 +1,13 @@
 .comments_wrap
-  ul.list-group
+  h2 评论列表
+  .tweet
     - @comments.each do |comment|
-      li.list-group-item
-        span #{comment.name}
-        span #{format_datetime comment.created_at}
-        span #{comment.cnt}
+      p
+        i #{comment.name}发表于#{format_date comment.created_at}
+        | #{comment.cnt}
   .row
     .col-sm-12.col-lg-8
-      h3 添加评论
+      h2 添加评论
       = simple_form_for(Comment.new, url: blog_comments_path(@article.id), html: {novalidate: ''}, remote: true) do |f|
         .row
           .col-sm-12.col-lg-8

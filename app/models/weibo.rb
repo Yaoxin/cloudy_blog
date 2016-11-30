@@ -1,0 +1,2 @@
+class Weibo < ApplicationRecord
+end
