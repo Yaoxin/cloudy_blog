@@ -8,7 +8,9 @@ div.content style="margin: 2% 5% 2% 5%"
         div.markdown style="padding: 2% 8% 5% 8%; border: 1px solid LightGrey;"
           h2 #{@article.title}
           == @article.content_html
+          br
           = render 'comments'
+      td width="16%"
 
 
 
