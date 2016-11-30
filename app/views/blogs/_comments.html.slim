@@ -1,13 +1,17 @@
 .comments_wrap
   h2 评论列表
   .tweet
-    - @comments.each do |comment|
-      p
-        i #{comment.name}发表于#{format_date comment.created_at}
-        | #{comment.cnt}
+    -  if @comments.empty?
+      p 暂无评论
+    - else
+      - @comments.each do |comment|
+        p
+          i #{comment.name}发表于#{format_date comment.created_at}
+          | #{comment.cnt}
+
+  h2 添加评论
   .row
     .col-sm-12.col-lg-8
-      h2 添加评论
       = simple_form_for(Comment.new, url: blog_comments_path(@article.id), html: {novalidate: ''}, remote: true) do |f|
         .row
           .col-sm-12.col-lg-8
