@@ -1,5 +1,5 @@
 # cloudy_blog
-The source code of cloudy_blog
+The source code of cloudy_blog. 
 
 ## Tech stack
 

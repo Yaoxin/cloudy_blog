@@ -1,5 +1,5 @@
 if ENV['RAILS_ENV'] == 'production'
-  app_root = '/data/www/cloudy_blog/shared'
+  app_root = '/home/ruby/cloudy_blog/shared'
   pidfile "#{app_root}/tmp/pids/puma.pid"
   state_path "#{app_root}/tmp/pids/puma.state"
   bind "unix://#{app_root}/tmp/sockets/puma.sock"
