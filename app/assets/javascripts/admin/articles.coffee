@@ -30,7 +30,9 @@ $(document).on 'turbolinks:load', ->
     success: (data,status,xhr)->
       txtBox = $("#content-input")
       caret_pos = txtBox.caret('pos')
-      src_merged = "\n" + data + "\n"
+      console.info(data)
+      src_merged = "\n" +"![](" +data + ")\n"
+      console.info(src_merged)
       source = txtBox.val()
       before_text = source.slice(0, caret_pos)
       txtBox.val(before_text + src_merged + source.slice(caret_pos+1, source.count))

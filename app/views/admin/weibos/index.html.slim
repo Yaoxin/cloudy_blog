@@ -1,0 +1,19 @@
+.row
+  .col-sm-12
+    h3 Tweet管理
+    hr
+    table.table
+      thead
+        tr
+          th 发布内容
+          th 创建时间
+          th 操作
+      tbody
+        - @weibos.each do |weibo|
+          tr
+            td
+              = link_to truncate(weibo.cnt, length: 30), "/tweet#w_#{weibo.id}"
+            td
+              = format_datetime weibo.created_at
+            td
+              = link_to '删除', admin_weibo_path(weibo.id), method: :delete, data: {confirm: "确认删除?"}
