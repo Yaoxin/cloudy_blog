@@ -4,5 +4,6 @@ class Admin::DashboardController < ApplicationController
 
   def index
     @article_count = Article.all.size
+    @weibo_count = Weibo.all.size
   end
 end
