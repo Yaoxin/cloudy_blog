@@ -1,4 +1,4 @@
-set :domain, 'blog.cloudying.cn'
+set :domain, '120.25.120.139'
 set :deploy_to, '/home/ruby/cloudy_blog'
 set :repository,  'git@github.com:Yaoxin/cloudy_blog.git'
 set :branch, 'production'
