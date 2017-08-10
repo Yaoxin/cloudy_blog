@@ -7,7 +7,7 @@
       = link_to '选择图片', "#", :id => 'select_photo'
   .row
     .col-md-8
-      input type='file' style='display: none;'
+      input type='file' style='display: none;' id='weibo_file'
       = f.input :cnt, :as => :text, :label => false, input_html: {name: 'cnt', id: 'cnt-input'}
   .row
     .col-sm-12.col-lg-6
