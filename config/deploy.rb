@@ -54,6 +54,7 @@ task :deploy => :environment do
     invoke :'git:clone'
     invoke :'deploy:link_shared_paths'
     invoke :'bundle:install'
+    # 这里踩了一个坑，如果是重新部署到新环境，需执行'rails:db_migrate:force' 命令
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
