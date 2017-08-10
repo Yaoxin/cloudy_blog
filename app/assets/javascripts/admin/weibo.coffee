@@ -1,6 +1,6 @@
 $(document).on 'turbolinks:load', ->
   $('a#select_photo').click ->
-    $('input[type=file]').show().focus().click().hide()
+    $('#weibo_file').show().focus().click().hide()
 
   opt =
     type: 'POST',
@@ -8,4 +8,4 @@ $(document).on 'turbolinks:load', ->
     success: (data, status, xhr)->
       $("#img-input").val(data)
 
-  $('input[type=file]').fileUpload opt
+  $('#weibo_file').fileUpload opt

@@ -9,7 +9,7 @@
     li.preview-title
       a href="#" 预览
     = link_to '上传图片', "#", :id=>'upload_photo'
-  input type="file" style="display: none;"
+  input type="file" style="display: none;" id="upload_photo_file"
 
     /= f.file_field :image, :label=>'', input_html: {id: 'upload_photo'}
   .tab-content#tabs

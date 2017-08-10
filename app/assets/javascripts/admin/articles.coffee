@@ -22,7 +22,7 @@ $(document).on 'turbolinks:load', ->
       false
     false
   $('a#upload_photo').click ->
-    $('input[type=file]').show().focus().click().hide()
+    $('#upload_photo_file').show().focus().click().hide()
 
   opt =
     type: 'POST',
@@ -36,5 +36,4 @@ $(document).on 'turbolinks:load', ->
       txtBox.val(before_text + src_merged + source.slice(caret_pos+1, source.count))
       txtBox.caret('pos',caret_pos + src_merged.length)
       txtBox.focus()
-
-  $('input[type=file]').fileUpload opt
+  $('#upload_photo_file').fileUpload opt
