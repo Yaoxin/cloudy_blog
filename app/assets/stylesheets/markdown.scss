@@ -59,20 +59,28 @@
   }
 
 
-  pre {
-    font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
-    font-size: 90%;
-    border: solid 1px lightgrey;
-    background-color: rgba(150, 211, 183, 0.73);
-    padding: 5px;
-    line-height: 1.3;
-  }
+  //pre {
+  //  font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
+  //  font-size: 90%;
+  //  border: solid 1px lightgrey;
+  //  background-color: rgba(150, 211, 183, 0.73);
+  //  padding: 5px;
+  //  line-height: 1.3;
+  //}
 
+
+  //code {
+  //  font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
+  //}
 
   code {
-    font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    color: #d14;
+    padding: 0;
+    margin: 0;
   }
-
 
   a {
     text-decoration: none;
