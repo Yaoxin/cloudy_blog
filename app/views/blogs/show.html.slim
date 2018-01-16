@@ -1,16 +1,21 @@
 - content_for(:title) do
   | #{@article.title}
 
-div.content style="margin: 2% 5% 2% 5%"
-  table
-    tr
-      td width="60%"
-        div.markdown style="padding: 2% 8% 5% 8%; border: 1px solid LightGrey;"
-          h2 #{@article.title}
-          == @article.content_html
-          /br
-          /= render 'comments'
-      td width="16%"
+
+
+
+.row
+  .col-md-2
+  .content.col-md-8.col-sm-12
+    div.markdown style="padding: 2% 6% 5% 6%;"
+      h2 #{@article.title}
+      == @article.content_html
+      /br
+      /= render 'comments'
+      div.cut
+        | ***
+
+
 
 
 

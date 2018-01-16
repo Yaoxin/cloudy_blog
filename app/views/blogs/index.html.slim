@@ -1,12 +1,12 @@
 - content_for(:title) do
   | 首页
 
-div style="margin: 5% 10% 2% 10%"
-  table style="width: 100%"
-    tr
-      td style="width: 70%"
-        ul.list-group
-          - @articles.each do |article|
-            li.list-group-item.title
-              = link_to article.title, blog_path(article)
+.row
+  .col-md-2
+  .col-md-9.col-sm-12
+    div style="margin: 5% 10% 2% 10%;"
+    ul.list-group
+      - @articles.each do |article|
+        li.list-group-item.title
+          = link_to article.title, blog_path(article)
 
