@@ -7,8 +7,15 @@
 .row
   .col-md-2
   .content.col-md-8.col-sm-12
-    div.markdown style="padding: 2% 6% 5% 6%;"
+    div.markdown style="padding: 2% 5% 5% 5%;"
       h2 #{@article.title}
+      div.rich_media_meta_list id="meta_content"
+        span.rich_media_meta.meta_original_tag id="copyright_logo"
+          | 原创
+        span.rich_media_meta.rich_media_meta_text
+          | 发表于
+        span.rich_media_meta.rich_media_meta_text id="post-time"
+          = format_date @article.created_at
       == @article.content_html
       /br
       /= render 'comments'
