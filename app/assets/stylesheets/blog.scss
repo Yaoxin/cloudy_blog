@@ -12,3 +12,43 @@
   letter-spacing: 5px;
   margin: 15px 0;
 }
+
+.rich_media_meta_list {
+  margin-bottom: 18px;
+  line-height: 20px;
+  font-size: 0;
+}
+
+.rich_media_meta {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.rich_media_meta_text {
+  color: #8c8c8c;
+}
+
+.meta_original_tag {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px 0.5em;
+  border: 1px solid #9e9e9e;
+  color: #8c8c8c;
+  -moz-border-radius-topleft: 20% 50%;
+  border-top-left-radius: 20% 50%;
+  -webkit-border-top-left-radius: 20% 50%;
+  border-top-right-radius: 20% 50%;
+  -moz-border-radius-topright: 20% 50%;
+  -webkit-border-top-right-radius: 20% 50%;
+  border-bottom-left-radius: 20% 50%;
+  -moz-border-radius-bottomleft: 20% 50%;
+  -webkit-border-bottom-left-radius: 20% 50%;
+  border-bottom-right-radius: 20% 50%;
+  -moz-border-radius-bottomright: 20% 50%;
+  -webkit-border-bottom-right-radius: 20% 50%;
+  font-size: 15px;
+  line-height: 1.1;
+}
