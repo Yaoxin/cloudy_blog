@@ -6,9 +6,18 @@
 @import "comment";
 @import "admin/*";
 
+body {
+  font: 15px/1.48 "Inconsolata-g", Consolas, Liberation Mono, "Courier New", Courier, monospace;
+  background-color: #fff;
+  font-weight: normal;
+  color: #414243;
+  margin: 0;
+  padding: 0;
+}
+
 body.view {
-  font-family: STFangSong, Helvetica, Arial, Vernada, Tahoma, STXihei, "Microsoft YaHei", "Songti SC", SimSun, Heiti, sans-serif;
-  font-size: 18px;
+  word-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .title a {
@@ -36,4 +45,17 @@ li.title:hover {
   background-image: none;
   background-color: #fff;
   box-shadow: none;
+}
+
+main {
+
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 10px;
+  font-size: 14px;
+  width: 98%;
+  margin: 0 auto 40px auto;
 }

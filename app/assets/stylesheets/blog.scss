@@ -1,6 +1,14 @@
 .content {
-  font-family:"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-size: medium;
+  font-size: inherit;
   font-style: normal;
   text-align: start;
+}
+
+.cut {
+  font-size: 21px;
+  clear: both;
+  color: #aaa;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 15px 0;
 }

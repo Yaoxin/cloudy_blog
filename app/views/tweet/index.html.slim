@@ -1,18 +1,16 @@
 - content_for(:title) do
   | Tweet
 
-div.content style="margin: 2% 5% 2% 5%"
-  table style="width: 100%"
-    tr
-      td style="width: 60%"
-        div.markdown style="padding: 2% 8% 5% 8%; border: 1px solid LightGrey;"
-          h3 我的Tweet
-          .tweet
-            - @weibos.each do |weibo|
-              p id="w_#{weibo.id}"
-                i #{format_datetime weibo.created_at}
-                | #{weibo.cnt}
-                - unless weibo.img.empty?
-                  br
-                  img src="#{weibo.img}"
-      td width="16%"
+.row
+  .col-md-2
+  .content.col-md-8.col-sm-12
+    div.markdown style="padding: 2% 6% 5% 6%;border: 1px solid LightGrey;"
+      h3 我的Tweet
+      .tweet
+        - @weibos.each do |weibo|
+          p id="w_#{weibo.id}"
+            i #{format_datetime weibo.created_at}
+            | #{weibo.cnt}
+            - unless weibo.img.empty?
+              br
+              img src="#{weibo.img}"
