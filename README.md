@@ -21,5 +21,10 @@ The source code of cloudy_blog.
 
 [rails template of 80percent](https://github.com/80percent/rails-template)
 
+## Style
+
+* 首页
+![dashboard](https://github.com/Yaoxin/cloudy_blog/blob/master/images/%E9%A6%96%E9%A1%B5.png)
+
 ## LICENSE
 MIT
